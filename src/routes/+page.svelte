@@ -1,2 +1,27 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import Map from "./main-page/map.svelte";
+    import Hero from "./main-page/hero.svelte";
+</script>
+
+<div class="mt-12">
+    <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="mb-4 md:mb-0 flex-none text-center md:text-left md:w-14 md:rotate-270">
+            About the project
+        </div>
+        <div class="overflow-visible flex-auto">
+            <!-- <Hero /> -->
+        </div>
+    </div>
+</div>
+
+<div class="mt-12">
+    <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="mb-4 md:mb-0 flex-none text-center md:text-left md:w-14 md:rotate-270">
+            Partners
+        </div>
+        <div class="overflow-visible flex-auto">
+            <Map />
+        </div>
+    </div>
+</div>
+
