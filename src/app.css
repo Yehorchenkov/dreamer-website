@@ -19,3 +19,8 @@
     border-color: var(--color-gray-200, currentColor);
   }
 }
+
+@theme {
+  --color-primary: oklch(26.02% 0.17198331635378553 264.1810480335322);
+  --color-secondary: oklch(86.52% 0.1767 90.38);
+}
