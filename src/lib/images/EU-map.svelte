@@ -26,7 +26,7 @@
 		},
 	}
 
-	import { Popover } from "bits-ui";
+	import { Popover, Button } from "bits-ui";
 
 	let customAnchor = $state(null);
 	let isOpen = $state(false);
@@ -54,10 +54,10 @@
 
 <Popover.Root bind:open={isOpen}>
 	<Popover.Trigger />
-	<Popover.Content {customAnchor} class="z-10 bg-white p-2 rounded-lg shadow-lg">
+	<Popover.Content {customAnchor} class="z-10 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
 		{#if selectedCountry}
       		<p>{countryData[selectedCountry].description}</p>
-      		<a href={countryData[selectedCountry].ref} target="_blank">More info</a>
+      		<Button.Root href={countryData[selectedCountry].ref} target="_blank" class="inline-flex font-medium items-center text-blue-600 hover:underline">More info</Button.Root>
     	{/if}
 	</Popover.Content>
 </Popover.Root>
@@ -100,11 +100,10 @@
 
 	.st2{opacity:0.15;}
 	.st3{fill:#20201F;}
-	.st4{fill:#0059ff}
+	.st4{fill:#0059ff;}
 	.st5{fill:#F6F9F1;stroke:#166F75;stroke-width:0.5;stroke-miterlimit:10;}
 	.st6{fill:none;}
-	.st7{enable-background:new    ;}
-	.st8{fill:#F6F9F1;stroke:#94C256;stroke-width:0.5;stroke-miterlimit:10;}
+	.st8{fill:#F6F9F1;stroke:#000675;stroke-width:0.5;stroke-miterlimit:10;}
 </style>
 
 <g>
