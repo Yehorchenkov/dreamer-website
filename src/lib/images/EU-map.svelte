@@ -1,27 +1,27 @@
 <script>
 	const countryData = {
 		'SK': {
-			description: "Some boring text here about Slovakia",
+			description: "STUBA logo",
 			ref: "https://en.wikipedia.org/wiki/Slovakia"
 		},
 		'PL': {
-			description: "Some boring text here about Poland",
+			description: "KU logo",
 			ref: "https://en.wikipedia.org/wiki/Poland"
 		},
 		'IE': {
-			description: "Some boring text here about Ireland",
+			description: "SETU logo",
 			ref: "https://en.wikipedia.org/wiki/Poland"
 		},
 		'RO': {
-			description: "Some boring text here about Romania",
+			description: "UPB logo",
 			ref: "https://en.wikipedia.org/wiki/Poland"
 		},
 		'CR': {
-			description: "Some boring text here about Croatia",
+			description: "ZSEM logo",
 			ref: "https://en.wikipedia.org/wiki/Poland"
 		},
 		'UA': {
-			description: "Some boring text here about Ukraine",
+			description: "KNUCA and TSNUK logos",
 			ref: "https://en.wikipedia.org/wiki/Poland"
 		},
 	}
