@@ -3,6 +3,7 @@
     import { Button } from "bits-ui";
     import logoFull from "$lib/images/DREAMER_colour_full.svg";
     import logoEU from "$lib/images/EN_Co-fundedbytheEU_RGB_POS.png?enhanced";
+    import { siteConfig } from "$lib/config/site";
 </script>
 
 <footer class="bg-gray-100">
@@ -18,14 +19,12 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
                     <ul class="text-gray-500  font-medium">
                         <li class="mb-4">
-                            <Button.Root href="/" class="hover:underline">Link 1</Button.Root>
+                            <Button.Root href="/about" class="hover:underline">About</Button.Root>
                         </li>
                         <li class="mb-4">
-                            <Button.Root href="/" class="hover:underline">Link 2</Button.Root>
+                            <Button.Root href="/news" class="hover:underline">News</Button.Root>
                         </li>
-                        <li>
-                            <Button.Root href="/" class="hover:underline">Link 3</Button.Root>
-                        </li>
+
                     </ul>
                 </div>
                 <div>
@@ -33,7 +32,7 @@
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4 flex space-x-2 items-center">
                             <Button.Root
-                                href="https://facebook.com/groups/631008452638298"
+                                href={siteConfig.links.facebook}
                                 target="_blank"
                                 class="hover:underline"
                             >
@@ -43,7 +42,7 @@
                         </li>
                         <li class="mb-4 flex space-x-2 items-center">
                             <Button.Root
-                                href="https://www.linkedin.com/groups/10048753"
+                                href={siteConfig.links.linkedin}
                                 target="_blank"
                                 class="hover:underline"
                             >
@@ -58,7 +57,7 @@
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
                             <p class="text-primary">Project Coordinator:</p>
-                            <div class="flex space-x-2">
+                            <div class="flex-row lg:flex lg:space-x-2">
                                 <p>Oleksii Yehorchenkov,</p>
                                 <Button.Root class="hover:underline" href="https://spectra-perseus.org">
                                     Spectra CE EU
@@ -70,7 +69,7 @@
                         </li>
                         <li>
                             <p class="text-primary">Project Administrator:</p>
-                            <div class="flex space-x-2">
+                            <div class="flex-row lg:flex lg:space-x-2">
                                 <p>Nataliia Yehorchenkova,</p>
                                 <Button.Root class="hover:underline" href="https://spectra-perseus.org">
                                     Spectra CE EU

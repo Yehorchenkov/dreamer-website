@@ -54,7 +54,7 @@
 
 <Popover.Root bind:open={isOpen}>
 	<Popover.Trigger />
-	<Popover.Content {customAnchor} class="z-10 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+	<Popover.Content {customAnchor} class="z-10 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
 		{#if selectedCountry}
       		<p>{countryData[selectedCountry].description}</p>
       		<Button.Root href={countryData[selectedCountry].ref} target="_blank" class="inline-flex font-medium items-center text-blue-600 hover:underline">More info</Button.Root>

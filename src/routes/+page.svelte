@@ -5,6 +5,8 @@
     import KeyFacts from "./main-page/key-facts.svelte";
     import News from "./main-page/news.svelte";
 
+    let { data } = $props();
+
     const sections = [
         {
             title: "About the project",
@@ -43,7 +45,12 @@
             <!-- Section Content (right on md, bottom on small screens) -->
             <div class="flex w-full items-center p-4">
                     {#if content}
-                        <svelte:component this={content} />
+                        {@const Component = content}
+                        {#if content === News}
+                            <Component data={data}/>
+                        {:else}
+                            <Component />
+                        {/if}
                     {/if}
             </div>
         </div>
