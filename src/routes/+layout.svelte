@@ -1,5 +1,5 @@
 <script>
-	import '../app.css';
+	import '$lib/styles/app.css';
 	let { children } = $props();
 	import SiteHeader from '$lib/ui/site-header.svelte';
 	import SiteFooter from '$lib/ui/site-footer.svelte';

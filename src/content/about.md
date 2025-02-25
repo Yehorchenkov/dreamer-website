@@ -27,27 +27,28 @@ Led by the **SPECTRA Centre of Excellence EU of Slovak University of Technology 
 
 The DREAMER consortium includes:
 
-- **Slovak University of Technology in Bratislava (Slovakia)**
+- **[Slovak University of Technology in Bratislava (Slovakia)](https://www.stuba.sk)**
 
-- **Universitatea Națională de Știință și Tehnologie POLITEHNICA București (Romania)**
+- **[Universitatea Națională de Știință și Tehnologie POLITEHNICA București (Romania](https://upb.ro/))**
 
-- **Taras Shevchenko National University of Kyiv (Ukraine)**
+- **[Taras Shevchenko National University of Kyiv (Ukraine)](https://knu.ua/en/)**
 
-- **Kyiv National University of Construction and Architecture (Ukraine)**
+- **[Kyiv National University of Construction and Architecture (Ukraine)](https://eng.knuba.edu.ua/)**
 
-- **Akademia Leona Koźmińskiego (Poland)**
+- **[Akademia Leona Koźmińskiego (Poland)](https://www.kozminski.edu.pl/en)**
 
-- **South East Technological University (Ireland)**
+- **[South East Technological University (Ireland)](https://www.setu.ie/)**
 
-- **Zagreb School of Economics and Management (Croatia)**
+- **[Zagreb School of Economics and Management (Croatia)](https://zsem.hr/en/)**
 
 With support from:
 
-- **Oracle Academy**
+- **[Oracle Academy](https://academy.oracle.com)**
 
-- **Project Management Institute, Croatia**
+- **[Project Management Institute, Croatia](https://www.pmi-croatia.hr/)**
 
-- **PM² Alliance**
+- **[PM² Alliance](https://www.pm2alliance.eu/)**
+
 
 ## Activities and Outcomes
 

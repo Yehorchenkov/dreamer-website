@@ -1,0 +1,28 @@
+.st0{
+    fill:#166F75;
+}
+
+.st1{
+    fill:#000675;
+    transition: fill 0.3s,       /* Smooth color transition */
+              transform 0.3s;
+    transform-origin: center;    /* or 50% 50% */
+    transform-box: fill-box;     /* Ensures the bounding box is used for centering */
+}
+
+.st1:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.st1:hover {
+      fill: #ffcc00; /*new color on hover */
+    transform: scale(1.05); /* Scale up by 20% on hover */
+}
+
+.st2{opacity:0.15;}
+.st3{fill:#20201F;}
+.st4{fill:#0059ff;}
+.st5{fill:#F6F9F1;stroke:#166F75;stroke-width:0.5;stroke-miterlimit:10;}
+.st6{fill:none;}
+.st8{fill:#F6F9F1;stroke:#000675;stroke-width:0.5;stroke-miterlimit:10;}

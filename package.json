@@ -1,7 +1,7 @@
 {
 	"name": "dreamer-website",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.5.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -39,6 +39,7 @@
 		"bits-ui": "^1.1.0",
 		"cheerio": "^1.0.0",
 		"embla-carousel-svelte": "^8.5.2",
+		"mdsvex-enhanced-images": "^0.3.0",
 		"tailwind-merge": "^3.0.1"
 	}
 }
