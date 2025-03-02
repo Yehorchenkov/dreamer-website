@@ -4,8 +4,18 @@
     let { directory } = $props();
     let galleryImages = $state([]);
 
+    // const imageModules = import.meta.glob(
+	// 	'/src/lib/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+	// 	{
+	// 		eager: true,
+	// 		query: {
+	// 			enhanced: true
+	// 		}
+	// 	}
+	// )
+
     const imageModules = import.meta.glob(
-		'/src/lib/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+		'/src/content/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
 		{
 			eager: true,
 			query: {
@@ -22,7 +32,6 @@
     );
 
     galleryImages = Object.entries(filteredImages).map(([_path, module]) => {
-        console.log("Module.default", module.default);
         return {
             src: module.default,
             href: module.default.img.src,
