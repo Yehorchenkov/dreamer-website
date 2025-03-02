@@ -36,33 +36,7 @@ The partners agreed on key deliverables for the coming months, including the pre
 The DREAMER Project aims to improve project management education by focusing on digital transformation, sustainability, and professional development. The initiative supports Ukraine's reconstruction efforts while fostering international collaboration in education and research.
 
 <script>
-    import image1 from '$lib/images/news/dreamer-project-kick-off/20241206_085637.jpg?enhanced';
-    import image2 from '$lib/images/news/dreamer-project-kick-off/20241206_112917.jpg?enhanced';
-
-    import image1Url from '$lib/images/news/dreamer-project-kick-off/20241206_085637.jpg';
-    import image2Url from '$lib/images/news/dreamer-project-kick-off/20241206_112917.jpg';
-
+    import Gallery from '$lib/Gallery.svelte';
 </script>
 
-<div class="flex space-x-2 justify-center">
-    <a
-        href={image1Url}
-        target="_blank"
-    >
-        <enhanced:img
-            src={image1}
-            alt="DREAMER Project Kick-Off Meeting Working Mood"
-            class="h-64 w-auto"
-        />
-    </a>
-    <a
-        href={image2Url}
-        target="_blank"
-    >
-        <enhanced:img
-            src={image2}
-            alt="DREAMER Project Kick-Off Meeting Group Photo"
-            class="h-64 w-auto"
-        />
-    </a>
-</div>
+<Gallery directory={ "dreamer-project-kick-off" } />

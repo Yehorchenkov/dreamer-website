@@ -1,0 +1,1 @@
+import{d as c,E as i,h as s,i as r,j as h,k as d,l as p}from"./8ThbnUB_.js";function m(t,f,o){r&&h();var n=t,a,e;c(()=>{a!==(a=f())&&(e&&(d(e),e=null),a&&(e=s(()=>o(n,a))))},i),r&&(n=p)}export{m as c};

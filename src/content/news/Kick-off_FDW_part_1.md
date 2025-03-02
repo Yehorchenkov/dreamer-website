@@ -11,4 +11,8 @@ We also gained valuable insights from our partners from Kyiv National University
 Thank you to everyone who contributed—your input and expertise are key to enhancing our educational practices!
 Looking forward to the next sessions and continuing this exciting journey in shaping the future of project management education.
 
-![Faculty Development Workshop Day 1](../../lib/images/news/Kick-off_FDW_part_1/group_photo_11_02_1.png)
+<script>
+    import Gallery from '$lib/Gallery.svelte';
+</script>
+
+<Gallery directory={ "Kick-off_FDW_part_1" } />
