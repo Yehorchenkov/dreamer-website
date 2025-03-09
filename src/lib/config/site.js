@@ -5,6 +5,7 @@ export const siteConfig = {
     links: {
         facebook: 'https://facebook.com/groups/631008452638298',
         linkedin: 'https://www.linkedin.com/in/dreamer-eu-044334353/',
+        youtube: 'https://www.youtube.com/@dreamer-eu',
     },
     keywords: `DREAMER, Erasmus+, Ukraine Reconstruction, Project Management, Education, Research, 2024-1-SK01-KA220-HED-000248287`,
 };

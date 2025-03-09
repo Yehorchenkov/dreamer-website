@@ -4,6 +4,7 @@
     import ProjectGoals from "./main-page/project-goals.svelte";
     import KeyFacts from "./main-page/key-facts.svelte";
     import News from "./main-page/news.svelte";
+    import Modules from "./main-page/modules.svelte";
 
     let { data } = $props();
 
@@ -23,6 +24,10 @@
         {
             title: "News",
             content: News
+        },
+        {
+            title: "Modules",
+            content: Modules
         },
         {
             title: "Partners",
@@ -46,7 +51,7 @@
             <div class="flex w-full items-center p-4">
                     {#if content}
                         {@const Component = content}
-                        {#if content === News}
+                        {#if content === News || content === Modules}
                             <Component data={data}/>
                         {:else}
                             <Component />

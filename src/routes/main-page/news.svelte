@@ -40,34 +40,6 @@
         prevButtonDisabled = !emblaApi.canScrollPrev();
         nextButtonDisabled = !emblaApi.canScrollNext();
     }
-
-
-    const news = [
-        {
-            title: "New project started",
-            date: "01.10.2024",
-            description: "We are happy to announce that our new project has started. The project will last for 3 years and will have a budget of 400k EUR. We are looking forward to working with our partners on this project.",
-            reference: "https://www.google.com"
-        },
-        {
-            title: "First meeting with partners",
-            date: "15.10.2024",
-            description: "We had our first meeting with our partners. We discussed the project goals and the tasks that need to be done. We are excited to start working on the project.",
-            reference: "https://www.google.com"
-        },
-        {
-            title: "Project goals defined",
-            date: "30.10.2024",
-            description: "We have defined the project goals and the tasks that need to be done. We are now working on the project plan and the timeline for the project.",
-            reference: "https://www.google.com"
-        },
-        {
-            title: "Project plan finalized",
-            date: "15.11.2024",
-            description: "We have finalized the project plan and the timeline for the project. We are now ready to start working on the project tasks.",
-            reference: "https://www.google.com"
-        },
-    ];
 </script>
 
 <div class="embla container mx-auto p-4">

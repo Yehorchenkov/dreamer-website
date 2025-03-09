@@ -50,6 +50,16 @@
                             </Button.Root>
                             <Icon icon="uil:external-link-alt" />
                         </li>
+                        <li class="mb-4 flex space-x-2 items-center">
+                            <Button.Root
+                                href={siteConfig.links.youtube}
+                                target="_blank"
+                                class="hover:underline"
+                            >
+                                Youtube
+                            </Button.Root>
+                            <Icon icon="uil:external-link-alt" />
+                        </li>
                     </ul>
                 </div>
                 <div>
