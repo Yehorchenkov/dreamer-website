@@ -3,7 +3,6 @@
     let { data } = $props();
 
     let partner = partnersData.find((partner) => partner.shortName === data.meta.lead);
-    console.log(partner);
 </script>
 
 <section class="max-w-screen-xl p-4 mx-auto justify-center mt-0 lg:mt-4">

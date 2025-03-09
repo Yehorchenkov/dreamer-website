@@ -1,50 +1,6 @@
 <script>
-	import STUBAlogo from '$lib/images/logos/STU-anfnv.png?enhanced';
-	import KUlogo from '$lib/images/logos/logo-ALK.png?enhanced';
-	import SETUlogo from '$lib/images/logos/RGB_SETU.png?enhanced';
-	import UPBlogo from '$lib/images/logos/PB_logo_EN.png?enhanced';
-	import ZSEMlogo from '$lib/images/logos/ZSEM-logo2.png?enhanced';
-	import KNUCAlogo from '$lib/images/logos/KNUCA-logo.png?enhanced';
-	import TSNUKlogo from '$lib/images/logos/Logo_KNU.png?enhanced';
+	import { partnersData } from '$lib/partnersData.js';
 
-	const countryData = {
-		SK: {
-			description: 'STUBA logo',
-			imgComp: STUBAlogo,
-			alt: 'STUBA logo',
-			ref: 'https://priestoroveplanovanie.sk/index.php/dreamer-erasmus/'
-		},
-		PL: {
-			description: 'KU logo',
-			imgComp: KUlogo,
-			alt: 'KU logo',
-			ref: 'https://www.kozminski.edu.pl/en/dreamer-development-and-reconstruction-empowerment-through-advanced-project-management-education-and-research'
-		},
-		IE: {
-			description: 'SETU logo',
-			imgComp: SETUlogo,
-			alt: 'SETU logo',
-			ref: 'https://sabre-centre.ie/projects/dreamer/'
-		},
-		RO: {
-			description: 'UPB logo',
-			imgComp: UPBlogo,
-			alt: 'UPB Logo',
-			ref: 'https://dreamer.tcm.pub.ro/'
-		},
-		CR: {
-			description: 'ZSEM logo',
-			imgComp: ZSEMlogo,
-			alt: 'ZSEM logo',
-			ref: 'https://zsem.hr/en/'
-		},
-		UA: {
-			description: 'KNUCA and TSNUK logos',
-			imgComp: [KNUCAlogo, TSNUKlogo],
-			alt: ['KNUCA logo', 'TSNUK logo'],
-			ref: ['https://eng.knuba.edu.ua/', 'http://pm.fit.knu.ua/dreamer/']
-		}
-	};
 	import '$lib/styles/map.css';
 
 	import { Popover, Button, Tooltip, Separator } from 'bits-ui';
@@ -87,62 +43,61 @@
 			togglePopover();
 		}
 	}
+
+	// Function to get partners from a specific country
+    function getPartnersByCountry(countryCode) {
+        return partnersData.filter(partner => partner.country === countryCode);
+    }
 </script>
 
 <Popover.Root bind:open={isOpen}>
-	<Popover.Trigger />
-	<Popover.Content
-		{customAnchor}
-		class="z-10 max-w-sm rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
-	>
-		{#if selectedCountry && countryData[selectedCountry]}
-			{#if selectedCountry === 'UA'}
-				<div class="">
-					<enhanced:img
-						src={countryData[selectedCountry].imgComp[0]}
-						alt={countryData[selectedCountry].alt[0]}
-						class="z-20 mx-auto h-32 w-auto rounded-lg"
-					/>
-					<Button.Root
-						href={countryData[selectedCountry].ref[0]}
-						target="_blank"
-						class="mt-4 inline-flex items-center font-medium text-blue-600 hover:underline"
-					>
-						More info
-					</Button.Root>
-					<Separator.Root
-						orientation="horizontal"
-						class="bg-gray-200 my-4 shrink-0 h-px w-full"
-					/>
-					<enhanced:img
-						src={countryData[selectedCountry].imgComp[1]}
-						alt={countryData[selectedCountry].alt[1]}
-						class="z-20 mx-auto h-32 w-auto rounded-lg"
-					/>
-					<Button.Root
-						href={countryData[selectedCountry].ref[1]}
-						target="_blank"
-						class="mt-4 inline-flex items-center font-medium text-blue-600 hover:underline"
-					>
-						More info
-					</Button.Root>
-				</div>
-			{:else}
-				<enhanced:img
-					src={countryData[selectedCountry].imgComp}
-					alt={countryData[selectedCountry].alt}
-					class="z-20 mx-auto h-32 w-auto rounded-lg"
-				/>
-				<Button.Root
-					href={countryData[selectedCountry].ref}
-					target="_blank"
-					class="mt-4 inline-flex items-center font-medium text-blue-600 hover:underline"
-				>
-					More info
-				</Button.Root>
-			{/if}
-		{/if}
-	</Popover.Content>
+    <Popover.Trigger />
+    <Popover.Content
+        {customAnchor}
+        class="z-10 max-w-sm rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+    >
+        {#if selectedCountry}
+            {#if selectedCountry === 'UA'}
+                {#each getPartnersByCountry(selectedCountry) as partner, index}
+                    {#if index > 0}
+                        <Separator.Root
+                            orientation="horizontal"
+                            class="bg-gray-200 my-4 shrink-0 h-px w-full"
+                        />
+                    {/if}
+                    <div class="">
+                        <enhanced:img
+                            src={partner.imgComp}
+                            alt={partner.imgAlt}
+                            class="z-20 mx-auto h-32 w-auto rounded-lg"
+                        />
+                        <Button.Root
+                            href={partner.ref}
+                            target="_blank"
+                            class="mt-4 inline-flex items-center font-medium text-blue-600 hover:underline"
+                        >
+                            More info
+                        </Button.Root>
+                    </div>
+                {/each}
+            {:else}
+                {#each getPartnersByCountry(selectedCountry) as partner}
+                    <enhanced:img
+                        src={partner.imgComp}
+                        alt={partner.imgAlt}
+                        class="z-20 mx-auto h-32 w-auto rounded-lg"
+                    />
+                    <Button.Root
+                        href={partner.ref}
+                        target="_blank"
+                        class="mt-4 inline-flex items-center font-medium text-blue-600 hover:underline"
+                    >
+                        More info
+                    </Button.Root>
+                {/each}
+            {/if}
+        {/if}
+    </Popover.Content>
 </Popover.Root>
 
 <!-- <Tooltip.Provider bind:open={isTooltipOpen}>
@@ -213,7 +168,7 @@
 		/>
 		<path
 			class="st1"
-			id="CR"
+			id="HR"
 			d="M684.9,846.5c5.8,2.1,9,7.3,14.1,10.1c4.2,2.3,7.5,0.9,11.9-0.2c-1.2,6.9-0.4,11.1,2.1,17.4    c1,2.6,4.1,7.8-0.2,9.3c-4.9,1.7-3.5-4.5-5.8-6.4c-2.2-1.9-9.7-1.3-13.1-1.9c-5.5-1-11.3,0.1-16.7-1.2c-5.6-1.3-8.5-6.5-14.8-4.5    c-4.4,1.4-5.2,4-9.9,1.7c-4-2-6.6-6-10.7,0c-2.8,4.2,2.8,10.1,4.9,14.2c2.4,4.7,3.3,7.8,4.1,12.8c1.1,6.5,4.2,6.7,8.1,11.6    c3.9,5,3.1,8.2,8.5,12.5c4.3,3.4,5,4.4,6.1,9.7c0.9,4.6,1.6,5.6,5.4,8.2c3.4,2.3,14.6,6.9,11.6,13c-3.4-2.6-6.3-5.8-10.1-8    c-2.5-1.4-6.1-2-8.2-4c-3.9-3.6-0.9-6-2.3-10.2c-0.9-2.7-4.2-4.7-6.4-6.2c-6-4.2-12.7-2.7-16.9-8.7c-3.9-5.5-6.7-14.3-14-16.2    c2.3-4.1,6.3,0.5,8.9-2.3c2.7-2.9-2.1-4.7-3.8-6.3c-8.3-8.1-4.7-17.3-8.7-26.8c-2.2-5.3-12.1-10.4-12.6-1.5    c-0.1,2,2.9,6.8,1.5,8.5c-2.7,3.2-4.4-4.3-5.3-5.9c-9.9,6.4-8.2-4.7-7.9-12c5,0,8.7,2.1,13.8,1c4.3-0.9,4.9-2,8.7,0.8    c4.8,3.5,9.9,8.5,15.4,3.2c4.8-4.6,6.5-12.1,11-16.9c3.1-3.3,6.1-2.7,10-4.2c4.5-1.8,6.8-5.3,10.1-8.7    C678.3,834,681.6,840.4,684.9,846.5z"
 			role="button"
 			tabindex="0"

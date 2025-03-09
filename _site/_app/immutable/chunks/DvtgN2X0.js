@@ -1,0 +1,1 @@
+import{a,t}from"./CQf-qqEh.js";import"./GbyQu_-x.js";const r={id:5,title:"Module 5 - Specifics of PM for regional development (inc. Programme & Portfolio Management)",ECTS:3,lead:"STUBA"};var n=t("<p>The content is under development and will be available soon.</p>");function p(e){var o=n();a(e,o)}export{p as default,r as metadata};
