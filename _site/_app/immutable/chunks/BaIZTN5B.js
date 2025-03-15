@@ -1,1 +1,0 @@
-import{a as t,t as i}from"./CQf-qqEh.js";import"./GbyQu_-x.js";const l={id:6,title:"Module 6 - Specifics of PM in Construction and Engineering",ECTS:"5 ECTS in total. 3 ECTS credits (Core) + 2 ECTS (elective module)",lead:"KNUCA"};var o=i("<p>The content is under development and will be available soon.</p>");function r(e){var n=o();t(e,n)}export{r as default,l as metadata};

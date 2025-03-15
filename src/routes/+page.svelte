@@ -37,11 +37,11 @@
 
 </script>
 
-<div class="max-w-screen mx-auto">
+<div class="max-w-screen-xl mx-auto">
     {#each sections as { title, content }}
         <div class="flex flex-col lg:flex-row">
             <!-- Section Name (left on md, top on small screens) -->
-            <div class="flex items-center justify-center p-4 lg:p-0 lg:w-14">
+            <div class="flex items-center justify-center p-4 lg:p-0 lg:w-8">
                 <h1 class="text-xl text-primary font-semibold uppercase md:transform lg:-rotate-90 whitespace-nowrap">
                     {title}
                 </h1>
