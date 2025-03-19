@@ -25,10 +25,10 @@
             title: "News",
             content: News
         },
-        {
-            title: "Modules",
-            content: Modules
-        },
+        // {
+        //     title: "Modules",
+        //     content: Modules
+        // },
         {
             title: "Partners",
             content: Map

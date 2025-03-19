@@ -16,8 +16,9 @@
 }
 
 .st1:hover {
-      fill: #ffcc00; /*new color on hover */
+    fill: #ffcc00; /*new color on hover */
     transform: scale(1.05); /* Scale up by 20% on hover */
+    cursor:pointer;
 }
 
 .st2{opacity:0.15;}

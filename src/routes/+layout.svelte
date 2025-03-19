@@ -11,7 +11,7 @@
 
 <Analytics />
 
-<SiteHeader data={data.modules}/>
+<SiteHeader data={data}/>
 
 {@render children()}
 

@@ -10,7 +10,7 @@
                 DREAMER -<br /><span class="text-2xl">Transforming Education to Tackle Global Challenges</span>
             </h1>
             <p class="text-md lg:text-xl mb-6 text-justify">
-                The DREAMER project is poised to make a profound and lasting impact,
+                The Development and Reconstruction Empowerment through Advanced Project Management Education and Research (DREAMER) project is poised to make a profound and lasting impact,
                 not only by enhancing project management education across Europe but also by supporting Ukraine's journey
                 toward recovery and resilience. By fostering collaboration, promoting sustainability,
                 and equipping students with the skills to lead in a digitalized world,

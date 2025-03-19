@@ -32,10 +32,10 @@
 				class="absolute left-1/2 transform -translate-x-1/2 border border-gray-100 mt-2 w-128 origin-top bg-white rounded-md shadow-lg p-2"
 			>
 				<ul class="flex flex-col p-4 gap-y-1.5">
-					{#each data as module}
+					{#each data.modules as { title, slug }}
 						<li>
-							<NavigationMenu.Link class="text-primary hover:text-blue-600" href="/{module.slug}">
-								{module.title}
+							<NavigationMenu.Link class="text-primary hover:text-blue-600" href="/{slug}">
+								{title}
 							</NavigationMenu.Link>
 						</li>
 					{/each}

@@ -1,6 +1,5 @@
 import { json } from '@sveltejs/kit';
-import { render } from 'svelte/server';
-import { parseDate, truncateHtml, getDetailedSlug } from '$lib/utils';
+import { getDetailedSlug } from '$lib/utils';
 
 async function getModules() {
     let modules = [];
