@@ -17,7 +17,7 @@
                 <p>{formatDate(date)}</p>
             </div>
             <p class="mb-2 text-justify">{content}</p>
-            <ButtonRef href={slug} text="Read more" />
+            <ButtonRef href="/{slug}" text="Read more" />
         {/each}
     </div>
 </section>
