@@ -7,7 +7,6 @@
 
 <Button.Root
     href={href}
-    target={external ? "_blank" : "_self"}
     class={twMerge("items-center text-blue-600 hover:underline", className)}
 >
     {text}
