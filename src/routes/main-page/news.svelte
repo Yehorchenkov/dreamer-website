@@ -88,7 +88,7 @@
         >
             <Icon icon="uil:arrow-circle-right" class="h-10 w-10" />
         </Button.Root>
-        <ButtonLight class="ml-4" ref="/news" text="View all news" />
+        <ButtonLight class="ml-4" href="/news" text="View all news" />
 
     </div>
 </div>

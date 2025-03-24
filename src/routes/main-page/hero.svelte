@@ -22,7 +22,7 @@
 				sustainability, and equipping students with the skills to lead in a digitalized world,
 				DREAMER sets a new standard for educational innovation.
 			</p>
-			<ButtonLight ref="/about" text="Learn more" />
+			<ButtonLight href="/about" text="Learn more" />
 		</div>
 
 		<!-- Right side: image positioned at bottom right -->
