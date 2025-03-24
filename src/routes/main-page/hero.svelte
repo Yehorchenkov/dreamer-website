@@ -1,6 +1,6 @@
 <script>
 	import ButtonLight from '$lib/ui/primitives/button-light.svelte';
-    // import HeroImage from '$lib/images/hero-image.png?enhanced';
+    import HeroImage from '$lib/images/hero-image.png?enhanced';
 </script>
 
 <section class="flex items-center justify-center">
@@ -28,7 +28,7 @@
 		<!-- Right side: image positioned at bottom right -->
 		<div class="flex items-end lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2 lg:justify-end">
 			<enhanced:img
-				src="$lib/images/hero-image.png"
+				src={HeroImage}
 				alt="construction site"
 				fetchpriority="high"
                 loading="eager"
