@@ -4,6 +4,7 @@ import { parseDate, truncateHtml, getDetailedSlug } from '$lib/utils';
 
 async function getNews() {
     let news = [];
+    const contentLength = 200;
 
     const paths = import.meta.glob('/src/content/news/*.md', { eager: true });
     // console.log(paths);
@@ -19,7 +20,7 @@ async function getNews() {
             // const content = file.default;
 
             const { html: contentHtml } = render(file.default, {});
-            const content = truncateHtml(contentHtml, 200);
+            const content = truncateHtml(contentHtml, contentLength);
             // console.log("api/news:\n", metadata, content);
             const newsItem = { ...metadata, slug, content };
             newsItem.published && news.push(newsItem);
