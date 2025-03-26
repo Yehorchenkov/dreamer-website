@@ -17,14 +17,16 @@
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
-                    <ul class="text-gray-500  font-medium">
+                    <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
                             <Button.Root href="/about" class="hover:underline">About</Button.Root>
                         </li>
                         <li class="mb-4">
                             <Button.Root href="/news" class="hover:underline">News</Button.Root>
                         </li>
-
+                        <li class="mb-4">
+                            <Button.Root href="/modules" class="hover:underline">Modules</Button.Root>
+                        </li>
                     </ul>
                 </div>
                 <div>
