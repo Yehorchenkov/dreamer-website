@@ -13,7 +13,7 @@ async function getNews() {
         const file = paths[path];
         // const slug = path.split('/').at(-1)?.replace('.md', '');
         const slug = getDetailedSlug(path);
-        // console.log(path);
+        console.log(slug);
 
         if (file && typeof file === 'object' && 'metadata' in file && slug) {
             const metadata = file.metadata;

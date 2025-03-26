@@ -1,8 +1,8 @@
 ---
-title: Kicking Off the Faculty Development Workshop!
-date: '11.02.2025'
+title: "Kicking Off the Faculty Development Workshop!"
+date: "11.02.2025"
 categories:
-- events
+    - events
 published: true
 ---
 

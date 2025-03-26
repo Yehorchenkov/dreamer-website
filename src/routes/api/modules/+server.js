@@ -9,6 +9,7 @@ async function getModules() {
     for (const path in paths) {
         const file = paths[path];
         const slug = getDetailedSlug(path);
+        console.log(slug);
 
         if (file && typeof file === 'object' && 'metadata' in file && slug) {
             const metadata = file.metadata;
