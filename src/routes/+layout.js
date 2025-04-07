@@ -1,2 +1,2 @@
 export const prerender = true; // for static adapter
-// export const trailingSlash = 'always';
+export const trailingSlash = 'always';
