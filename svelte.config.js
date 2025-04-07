@@ -19,7 +19,7 @@ const config = {
 		adapter: adapter({
 			pages: '_site',
 			assets: '_site',
-			fallback: '404.html',
+			fallback: undefined,
 			precompress: false,
 			strict: true
 		})

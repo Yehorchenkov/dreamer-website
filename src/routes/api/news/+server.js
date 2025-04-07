@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import { json } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import { parseDate, truncateHtml, getDetailedSlug } from '$lib/utils';

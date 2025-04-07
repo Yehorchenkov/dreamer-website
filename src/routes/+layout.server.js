@@ -1,3 +1,5 @@
+export const prerender = true;
+
 export async function load({ fetch }) {
     // Load news data
     const resNews = await fetch('/api/news');
