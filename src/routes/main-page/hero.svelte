@@ -1,6 +1,8 @@
 <script>
 	import ButtonLight from '$lib/ui/primitives/button-light.svelte';
-    import HeroImage from '$lib/images/hero-image.png?enhanced';
+	import HeroImage from '$lib/images/hero-image.png?enhanced';
+
+	let loaded = $state(false);
 </script>
 
 <section class="flex items-center justify-center">
@@ -27,13 +29,20 @@
 
 		<!-- Right side: image positioned at bottom right -->
 		<div class="flex items-end lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2 lg:justify-end">
+			{#if !loaded}
+				<p class="text-gray-200">
+					Loading image…
+				</p>
+			{/if}
 			<enhanced:img
 				src={HeroImage}
 				alt="construction site"
 				fetchpriority="high"
-                loading="eager"
+				loading="eager"
 				class="z-20 w-full rounded-lg object-cover lg:h-auto lg:max-h-full lg:w-auto"
-			/>
+				onload={() => (loaded = true)}
+			>
+			</enhanced:img>
 		</div>
 	</div>
 </section>

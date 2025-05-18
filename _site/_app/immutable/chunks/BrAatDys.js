@@ -1,1 +1,0 @@
-import{a as t,t as o}from"./DnwH6Nst.js";import"./C_Z3MQWZ.js";const n={id:7,title:"Module 7 - Agile PM Practices",ECTS:3,lead:"KU"};var l=o("<p>The content is under development and will be available soon.</p>");function p(e){var a=l();t(e,a)}export{p as default,n as metadata};
