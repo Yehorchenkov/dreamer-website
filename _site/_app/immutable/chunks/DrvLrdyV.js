@@ -1,0 +1,1 @@
+import"./CWj6FrbW.js";import"./D9UBFScZ.js";import{f as a,a as o}from"./CpX91Av3.js";const d={id:2,title:"Module 2 - Preparing EU Funded Projects",ECTS:3,lead:"UPB"},{id:p,title:m,ECTS:s,lead:_}=d;var r=a("<p>The content is under development and will be available soon.</p>");function u(e){var t=r();o(e,t)}export{u as default,d as metadata};

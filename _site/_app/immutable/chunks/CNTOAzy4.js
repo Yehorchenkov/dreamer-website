@@ -1,0 +1,1 @@
+import"./CWj6FrbW.js";import"./D9UBFScZ.js";import{f as a,a as i}from"./CpX91Av3.js";const n={id:8,title:"Module 8 - Specifics of PM in Industry transformation, digital transformation",ECTS:3,lead:"STUBA"},{id:s,title:f,ECTS:m,lead:p}=n;var e=a("<p>The content is under development and will be available soon.</p>");function _(t){var o=e();i(t,o)}export{_ as default,n as metadata};

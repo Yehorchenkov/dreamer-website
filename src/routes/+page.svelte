@@ -1,6 +1,7 @@
 <script>
     import Map from "./main-page/map.svelte";
     import Hero from "./main-page/hero.svelte";
+    import ProjectMission from "./main-page/project-mission.svelte";
     import ProjectGoals from "./main-page/project-goals.svelte";
     import KeyFacts from "./main-page/key-facts.svelte";
     import News from "./main-page/news.svelte";
@@ -13,6 +14,10 @@
             title: "About the project",
             content: Hero
         },
+        // {
+        //     title: "Project mission",
+        //     content: ProjectMission
+        // },
         {
             title: "Project goals",
             content: ProjectGoals

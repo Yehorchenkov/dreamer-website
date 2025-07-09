@@ -4,16 +4,6 @@
     let { directory } = $props();
     let galleryImages = $state([]);
 
-    // const imageModules = import.meta.glob(
-	// 	'/src/lib/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
-	// 	{
-	// 		eager: true,
-	// 		query: {
-	// 			enhanced: true
-	// 		}
-	// 	}
-	// )
-
     const imageModules = import.meta.glob(
 		'/src/content/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
 		{

@@ -46,7 +46,8 @@
 	<div
     	class="perspective-[200px] absolute left-0 top-full flex w-full justify-center"
   	>
-	<NavigationMenu.Viewport />
+		<NavigationMenu.Viewport />
+	</div>
 </NavigationMenu.Root>
 
 <!-- <NavigationMenu.Root class="hidden md:flex relative z-10 w-full justify-center">

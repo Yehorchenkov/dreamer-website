@@ -4,6 +4,7 @@ date: '25.05.2025'
 categories:
   - events
 published: true
+gallery: study-visit-slovakia
 ---
 
 We're excited to share the highlights from our comprehensive DREAMER study visit at the STUBA, Slovakia (20-24.05.2025)  , which has now concluded after four inspiring and knowledge-packed days!
@@ -43,6 +44,18 @@ Speakers from EIT Manufacturing were:
 The visit offered excellent opportunities for networking and knowledge exchange within the DREAMER team, strengthening our collaborative foundation for future project activities.
 
 Thank you to all speakers, participants, and partners who made these days so impactful and educational!
+
+<div class="aspect-video w-full max-w-4xl mx-auto">
+  <iframe 
+    class="w-full h-full" 
+    src="https://www.youtube.com/embed/2gXdHjc3tnw?si=QKOX11EIOAhrWd9_" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
 
 <script>
     import Gallery from '$lib/Gallery.svelte';

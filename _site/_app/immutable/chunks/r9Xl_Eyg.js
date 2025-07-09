@@ -1,0 +1,1 @@
+import"./CWj6FrbW.js";import"./D9UBFScZ.js";import{f as a,a as o}from"./CpX91Av3.js";const d={id:1,title:"Module 1 - the PM Basics",ECTS:3,lead:"ZSEM"},{id:p,title:r,ECTS:m,lead:_}=d;var i=a("<p>The content is under development and will be available soon.</p>");function c(t){var e=i();o(t,e)}export{c as default,d as metadata};

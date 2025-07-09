@@ -1,1 +1,0 @@
-import{a as o,t}from"./BkFKOKZk.js";import"./C_Z3MQWZ.js";const i={id:4,title:"Module 4 - Tools and Techniques",ECTS:4,lead:"TSNUK"};var n=t("<p>The content is under development and will be available soon.</p>");function p(e){var a=n();o(e,a)}export{p as default,i as metadata};
