@@ -3,6 +3,7 @@ title: DREAMER Project Kick-Off Meeting Summary
 date: '06.12.2024'
 categories:
   - events
+gallery: "dreamer-project-kick-off"
 published: true
 ---
 
@@ -34,9 +35,3 @@ The partners agreed on key deliverables for the coming months, including the pre
 ## About the DREAMER Project
 
 The DREAMER Project aims to improve project management education by focusing on digital transformation, sustainability, and professional development. The initiative supports Ukraine's reconstruction efforts while fostering international collaboration in education and research.
-
-<script>
-    import Gallery from '$lib/Gallery.svelte';
-</script>
-
-<Gallery directory={ "dreamer-project-kick-off" } />

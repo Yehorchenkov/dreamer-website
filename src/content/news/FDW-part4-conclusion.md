@@ -3,6 +3,7 @@ title: "Faculty Development Workshop – Part 4: A Successful Conclusion!"
 date: "05.03.2025"
 categories:
     - events
+gallery: "FDW-part4-conclusion"
 published: true
 ---
 
@@ -19,9 +20,3 @@ The contribution of Oracle Academy representatives was truly invaluable, offerin
 With this session, the Faculty Development Workshop officially concluded, marking the end of an incredible learning journey. Thank you to all participants, presenters, and partners who made this initiative a success!
 
 Stay tuned for more updates and opportunities from the DREAMER Project!
-
-<script>
-    import Gallery from '$lib/Gallery.svelte';
-</script>
-
-<Gallery directory={ "FDW-part4-conclusion" } />

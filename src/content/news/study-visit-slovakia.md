@@ -3,8 +3,8 @@ title: DREAMER Study Visit at STUBA, Slovakia - Complete Report
 date: '25.05.2025'
 categories:
   - events
+gallery: "study-visit-slovakia"
 published: true
-gallery: study-visit-slovakia
 ---
 
 We're excited to share the highlights from our comprehensive DREAMER study visit at the STUBA, Slovakia (20-24.05.2025)  , which has now concluded after four inspiring and knowledge-packed days!
@@ -56,9 +56,3 @@ Thank you to all speakers, participants, and partners who made these days so imp
     allowfullscreen>
   </iframe>
 </div>
-
-<script>
-    import Gallery from '$lib/Gallery.svelte';
-</script>
-
-<Gallery directory={ "study-visit-slovakia" } />

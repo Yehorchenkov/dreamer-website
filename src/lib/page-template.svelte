@@ -2,7 +2,7 @@
     import { formatDate } from '$lib/utils';
     import Icon from "@iconify/svelte";
 
-    let { data } = $props();
+    let { data, children } = $props();
 </script>
 
 <section class="max-w-screen-xl p-4 mx-auto justify-center mt-0 lg:mt-4">
@@ -16,6 +16,7 @@
         </div>
         <div class="prose max-w-none text-justify">
             <data.content />
+            {@render children?.()}
         </div>
     </div>
 </section>

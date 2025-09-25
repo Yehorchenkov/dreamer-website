@@ -1,16 +1,15 @@
 <script>
 	import PageTemplate from "$lib/page-template.svelte";
-	import Gallery from '$lib/Gallery.svelte';
+	import Gallery from '$lib/gallery.svelte';
 
 	let { data } = $props();
 
-	// console.log("news meta data: ", data.meta.gallery);
 </script>
 
 <PageTemplate {data}>
-	<data.content />
+	<!-- <data.content /> -->
 
-	<!-- {#if data.meta.gallery}
+	{#if data.meta.gallery}
 		<Gallery directory={ data.meta.gallery } />
-	{/if} -->
+	{/if}
 </PageTemplate>
