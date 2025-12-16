@@ -1,0 +1,1 @@
+import"./CWj6FrbW.js";import"./DaVP5oC0.js";import{f as o,a as t}from"./CSwRgDnd.js";const s={id:9,title:"Module 9 - Lessons Learned & Use Cases & Communities of Practice",ECTS:3,lead:"SETU"},{id:r,title:m,ECTS:p,lead:_}=s;var n=o("<p>The content is under development and will be available soon.</p>");function c(e){var a=n();t(e,a)}export{c as default,s as metadata};

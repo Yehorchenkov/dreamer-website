@@ -75,8 +75,8 @@
                                     Spectra CE EU
                                 </Button.Root>
                             </div>
-                            <Button.Root class="hover:text-primary text-sm" href="mailto:oleksii.yehorchenkov@stuba.sk">
-                                oleksii.yehorchenkov@stuba.sk
+                            <Button.Root class="hover:text-primary text-sm" href="mailto:oleksii.yehorchenkov@fm.uniba.sk">
+                                oleksii.yehorchenkov@fm.uniba.sk
                             </Button.Root>
                         </li>
                         <li>
@@ -87,8 +87,8 @@
                                     Spectra CE EU
                                 </Button.Root>
                             </div>
-                            <Button.Root class="hover:text-primary text-sm" href="mailto:nataliia.yehorchenkova@stuba.sk">
-                                nataliia.yehorchenkova@stuba.sk
+                            <Button.Root class="hover:text-primary text-sm" href="mailto:nataliia.yehorchenkova@fm.uniba.sk">
+                                nataliia.yehorchenkova@fm.uniba.sk
                             </Button.Root>
                         </li>
                     </ul>

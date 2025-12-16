@@ -1,9 +1,23 @@
 <script>
 	import ButtonLight from '$lib/ui/primitives/button-light.svelte';
-	import HeroImage from '$lib/images/hero-image.png?enhanced';
+
+	// Generate responsive WebP variants from the PNG
+	import HeroImage from '$lib/images/hero-image.png?enhanced&w=640;960;1280;1600&format=webp';
 
 	let loaded = $state(false);
 </script>
+
+<svelte:head>
+	<!-- Start fetching ASAP (helps LCP) -->
+	<link
+		rel="preload"
+		as="image"
+		href={HeroImage.img.src}
+		imagesrcset={HeroImage.img.srcset}
+		imagesizes="(min-width: 1024px) 50vw, 100vw"
+		fetchpriority="high"
+	/>
+</svelte:head>
 
 <section class="flex items-center justify-center">
 	<div
@@ -39,6 +53,8 @@
 				alt="construction site"
 				fetchpriority="high"
 				loading="eager"
+				sizes="(min-width: 1024px) 50vw, 100vw"
+				decoding="async"
 				class="z-20 w-full rounded-lg object-cover lg:h-auto lg:max-h-full lg:w-auto"
 				onload={() => (loaded = true)}
 			>

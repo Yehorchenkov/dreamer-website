@@ -1,0 +1,1 @@
+import{h as c,u as i,i as o,j as d,k as u}from"./CSwRgDnd.js";function m(e,n,f){c(()=>{var r=i(()=>n(e,f==null?void 0:f())||{});if(f&&(r!=null&&r.update)){var a=!1,t={};o(()=>{var s=f();d(s),a&&u(t,s)&&(t=s,r.update(s))}),a=!0}if(r!=null&&r.destroy)return()=>r.destroy()})}export{m as a};
