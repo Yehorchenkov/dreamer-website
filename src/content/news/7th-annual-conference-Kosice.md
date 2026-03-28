@@ -6,7 +6,17 @@ categories:
 published: true
 ---
 
-![DREAMER Project Presentation](7th-annual-conference-Kosice/1746045233967.jpg)
+<script>
+  import logo from './7th-annual-conference-Kosice/1746045233967.jpg?enhanced';
+</script>
+
+<div class="w-1/2 mx-auto">
+  <enhanced:img
+    src={logo}
+    alt="Comenius University Faculty of Management logo"
+    class="w-full h-auto"
+  />
+</div>
 
 We're proud to share that Dr. Oleksii Yehorchenkov presented the DREAMER project at the **7th Annual Project Management Conference in Košice, Slovakia**!
 

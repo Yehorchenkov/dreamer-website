@@ -1,13 +1,11 @@
 import { mdsvex } from 'mdsvex';
-import { enhancedImages } from 'mdsvex-enhanced-images';
 
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.md'],
-	remarkPlugins: [enhancedImages]
+	extensions: ['.md']
 }
 
 /** @type {import('@sveltejs/kit').Config} */

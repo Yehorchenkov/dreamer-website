@@ -21,3 +21,9 @@ The knowledge and best practices we're gathering through this study tour will di
 I'm grateful to be part of this international collaboration that brings together academics, engineers, and industry practitioners from across Europe. The DREAMER: Development and Reconstruction Empowerment through Advanced Project Management Education and Research project continues to deliver valuable insights that will shape the future of construction project management.
 
 A big thank you to Kozminski University for hosting us and to all the speakers and participants for their valuable contributions!
+
+Short videos from the study visit, prepared by our Polish partner, is now available here:
+
+[Video 1](https://youtu.be/IDAbIQDROQY)
+
+[Video 2](https://youtube.com/shorts/DaMgNZ2jGlw)

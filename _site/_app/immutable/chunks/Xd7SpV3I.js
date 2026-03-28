@@ -1,0 +1,1 @@
+import{j as e,k as t}from"./C2wy_3lr.js";import"./CT0T0Gak.js";import"./cry5Dbjr.js";var n={id:1,title:`Module 1 - the PM Basics`,ECTS:3,lead:`ZSEM`},{id:r,title:i,ECTS:a,lead:o}=n,s=e(`<p>The content is under development and will be available soon.</p>`);function c(e){t(e,s())}export{c as default,n as metadata};

@@ -1,6 +1,5 @@
 <script>
     let { data } = $props();
-    console.log(data.modules.slug);
 </script>
 
 <div class="max-w-screen-xl mx-auto space-y-2 md:space-y-4 p-6">

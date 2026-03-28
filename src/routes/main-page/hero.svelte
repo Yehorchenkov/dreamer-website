@@ -2,9 +2,7 @@
 	import ButtonLight from '$lib/ui/primitives/button-light.svelte';
 
 	// Generate responsive WebP variants from the PNG
-	import HeroImage from '$lib/images/hero-image.png?enhanced&w=640;960;1280;1600&format=webp';
-
-	let loaded = $state(false);
+	import HeroImage from '$lib/images/hero-image.png?enhanced&w=320;480;768;1024;1280&format=avif;webp';
 </script>
 
 <svelte:head>
@@ -14,7 +12,7 @@
 		as="image"
 		href={HeroImage.img.src}
 		imagesrcset={HeroImage.img.srcset}
-		imagesizes="(min-width: 1024px) 50vw, 100vw"
+		imagesizes="(min-width: 1280px) 42vw, (min-width: 1024px) 45vw, 92vw"
 		fetchpriority="high"
 	/>
 </svelte:head>
@@ -42,21 +40,15 @@
 		</div>
 
 		<!-- Right side: image positioned at bottom right -->
-		<div class="flex items-end lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2 lg:justify-end">
-			{#if !loaded}
-				<p class="text-gray-200">
-					Loading image…
-				</p>
-			{/if}
+		<div class="flex items-end justify-center lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2 lg:justify-end">
 			<enhanced:img
 				src={HeroImage}
 				alt="construction site"
 				fetchpriority="high"
 				loading="eager"
-				sizes="(min-width: 1024px) 50vw, 100vw"
-				decoding="async"
+				sizes="(min-width: 1280px) 42vw, (min-width: 1024px) 45vw, 92vw"
+				decoding="auto"
 				class="z-20 w-full rounded-lg object-cover lg:h-auto lg:max-h-full lg:w-auto"
-				onload={() => (loaded = true)}
 			>
 			</enhanced:img>
 		</div>
